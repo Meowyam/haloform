@@ -12,8 +12,10 @@ import Halogen.VDom.Driver (runUI)
 
 main :: Effect Unit
 main = HA.runHalogenAff do
+-- await blocks until loaded
   body <- HA.awaitBody
-  runUI component unit body
+--runUI rootcomponent input  dom elem
+  runUI component      unit   body
 
 data Action = Increment | Decrement
 
@@ -28,9 +30,9 @@ component =
 
   render state =
     HH.div_
-      [ HH.button [ HE.onClick \_ -> Decrement ] [ HH.text "-" ] [HP.classes [HH.ClassName "btn-primary"]]
+      [ HH.button [ HE.onClick \_ -> Decrement ] [ HH.text "-" ]
       , HH.div_ [ HH.text $ show state ]
-      , HH.button [ HE.onClick \_ -> Increment ] [ HH.text "+" ] [HP.classes [HH.ClassName "btn-primary"]
+      , HH.button [ HE.onClick \_ -> Increment ] [ HH.text "+" ]
       ]
 
   handleAction = case _ of

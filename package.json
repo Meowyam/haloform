@@ -1,0 +1,30 @@
+{
+  "name": "purescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "webpack:server": "webpack-dev-server --progress --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meowyam/haloform.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Meowyam/haloform/issues"
+  },
+  "homepage": "https://github.com/Meowyam/haloform#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.3.2",
+    "purescript-psa": "^0.8.2",
+    "purs-loader": "^3.7.2",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.0.0"
+  }
+}
