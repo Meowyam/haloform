@@ -12,12 +12,23 @@ to generate this file without the comments in this block.
 -}
 { name = "my-project"
 , dependencies =
-  [ "console"
+  [ "aff"
+  , "console"
+  , "const"
   , "effect"
+  , "either"
   , "halogen"
   , "halogen-formless"
+  , "halogen-select"
+  , "integers"
+  , "maybe"
+  , "newtype"
   , "prelude"
+  , "profunctor-lenses"
   , "psci-support"
+  , "strings"
+  , "web-events"
+  , "web-uievents"
   ]
 , packages = ./packages.dhall
 , sources = [ "src/**/*.purs", "test/**/*.purs" ]
