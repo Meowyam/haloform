@@ -20,6 +20,7 @@ to generate this file without the comments in this block.
   , "halogen"
   , "halogen-formless"
   , "halogen-select"
+  , "halogen-store"
   , "integers"
   , "maybe"
   , "newtype"
